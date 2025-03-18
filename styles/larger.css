@@ -1,0 +1,76 @@
+@media (min-width: 768px){
+
+    nav {
+        display: grid;  
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    }
+
+    .full-width {
+        display: grid;
+        grid-column: 1/-1;
+        text-align: center ;
+    }
+
+    .profile {
+        gap: 40px;
+        justify-content:center;
+    }
+
+    .profile p {
+        font-weight: bold;
+        font-size: xx-large;
+        font: 700;
+    }
+
+    #grid-container {
+        display: grid;
+        grid-template-columns: 0.75fr auto;
+        gap: 20px;        
+    }
+
+    .smaller img {
+        max-width: 100rem;
+    }
+    
+    .card {
+        border: 1px lightgray solid;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    }
+
+    #grid-container {
+        display: grid;
+        grid-template-columns: 0.6fr  0.4fr;
+    }
+
+    .course-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+        gap: 20px;
+        padding: 10px ;
+        justify-self: center;
+    }
+
+    .head-nav {
+        display:grid;
+       
+    }
+
+    #menu {
+        display:none; /*hide burger*/
+    }
+
+    /*To ensure that even when the user do not close the hamburger button,
+    it the navigation content will flex horizontally when the screen is large*/
+    .head-nav.open {
+        display: grid;
+      
+    }
+
+    #animateme {
+        grid-template-rows: 1fr;
+    }
+}   
+
+
