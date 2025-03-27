@@ -150,7 +150,7 @@ function toggleMode() {
     const header = document.querySelector('.header');
     const menu = document.querySelector('#menu');
     const profile = document.querySelector('.profile');
-   // const profile_image = document.querySelector(profile.img);
+    const profile_image = document.querySelector('#profile-img');
     const footer = document.querySelector('footer');
     const body = document.querySelector('body');
 
@@ -158,7 +158,7 @@ function toggleMode() {
     header.classList.toggle('dark-mode');
     menu.classList.toggle('dark-mode');
     profile.classList.toggle('dark-mode');
-  //  profile_image.classList.toggle('dark-mode-profile-img-border');
+    profile_image.classList.toggle('dark-mode-profile-img-border');
     footer.classList.toggle('dark-mode');
     body.classList.toggle('dark-mode-body');
 }
