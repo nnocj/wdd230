@@ -144,6 +144,63 @@ function displayModal(course) {
     });
 }
 
+//when the light-dark button is clicked or toggled, the header should change
+// light mode and dark mode
+function toggleMode() {
+    const header = document.querySelector('.header');
+    const menu = document.querySelector('#menu');
+    const profile = document.querySelector('.profile');
+   // const profile_image = document.querySelector(profile.img);
+    const footer = document.querySelector('footer');
+    const body = document.querySelector('body');
+
+    // Toggle dark mode for header
+    header.classList.toggle('dark-mode');
+    menu.classList.toggle('dark-mode');
+    profile.classList.toggle('dark-mode');
+  //  profile_image.classList.toggle('dark-mode-profile-img-border');
+    footer.classList.toggle('dark-mode');
+    body.classList.toggle('dark-mode-body');
+}
+
+
+/*!document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById("light-dark");
+    const header = document.querySelector('.header');
+    const profile = document.querySelector('.profile');
+    const profile_image = profile.querySelector('img');
+    const menu = document.querySelector('#menu');
+    const footer = document.querySelector('footer');
+    const body = document.body;
+
+    // Check local storage for dark mode preference
+    if (localStorage.getItem("dark-mode") === "enabled") {
+        header.classList.Add('dark-mode');
+        menu.classList.Add('dark-mode');
+        profile.classList.Add('dark-mode');
+        profile_image.classList.Add('dark-mode-profile-img-border');
+        footer.classList.Add('dark-mode');
+        body.classList.Add('dark-mode-body');
+    }
+
+    toggleBtn.addEventListener("click", function () {
+        header.classList.toggle('dark-mode');
+        menu.classList.toggle('dark-mode');
+        profile.classList.toggle('dark-mode');
+        profile_image.classList.toggle('dark-mode-profile-img-border');
+        footer.classList.toggle('dark-mode');
+        body.classList.toggle("dark-mode");
+
+        // Store the user's preference
+        if (body.classList.contains("dark-mode")) {
+            localStorage.setItem("dark-mode-body", "enabled");
+        } else {
+            localStorage.setItem("dark-mode-body", "disabled");
+        }
+    });
+});*/
+
+
 // Initial rendering
 document.addEventListener("DOMContentLoaded", () => {
     renderCourses(courses);

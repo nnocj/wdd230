@@ -13,7 +13,7 @@
     <meta property="og:image"   content="https://nnocj.github.io/wdd230/images/my-profile.webp">
     <meta property="fb:app_id" content="1139284367865426">
     <meta name = "twitter:card" content="WDD 230 -Web Frontend Development">
-    <!---<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="styles/base.css" rel="stylesheet">
     <link href="styles/larger.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,9 +24,10 @@
     <script src="scripts/course.js" defer></script>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="profile">
             <button type="button" id="menu" aria-label="Toggle navigation"></button>
+            <button id="light-dark" onclick="toggleMode()">🌗</button>
             <img src="images/my-profile.webp" alt="A Profile Picture" width="90" height="100">
             <p>Nicholas O. Commey</p>
         </div>

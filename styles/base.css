@@ -94,7 +94,43 @@ nav li {
      font-family:Arial, Helvetica, sans-serif;
  }
  
- 
+ #light-dark{
+    position: absolute;
+    font-size: 1.25em;
+    color: inherit;
+    background-color: transparent;
+    top: 40px;
+    right: 1rem;
+    padding: 0;
+    border:none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head-nav a, #light-dark {
+    /*color:rgb(219, 225, 229);
+    background-color:rgb(2, 20, 13);*/
+    border-style: hidden;
+    
+ }
+
+ #light-dark, .search-button {
+    cursor: pointer;
+
+ }
+.dark-mode {
+    background-color: rgb(2, 20, 13, 0.97) !important;
+    color: rgb(219, 225, 229) !important;
+}
+.dark-mode-body {
+    background-color: rgb(230, 230, 230,0.1) !important;
+  }
+
+  .dark-mode-profile-img-border {
+    border: 2px rgb(219,225, 229) solid;
+  }
+
  .head-nav.open {
      display:flex;
      flex-direction: column;
